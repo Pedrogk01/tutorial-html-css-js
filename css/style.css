@@ -1,12 +1,50 @@
 body {
     background-color: #aae0ed;
- }
+}
  
- h1 {
-     color: #234234;
-     background-color: #1b5b16;
- }
+h1 {
+    color: #234234;
+}
  
- span { 
+span { 
      color: #04047d;
- }
+}
+
+#header {
+    height: 80px;
+    background-color: #93a305;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#sidebar {
+
+    width: 120px;
+    background-color: #0f8300;
+}
+
+#content {
+    width: 680px;
+    background-color: #6c7fe7;
+}
+
+#footer {
+    height: 150px;
+    background-color: #2f3033;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.flex-row {
+    display: flex;
+}
+
+#menu {
+    height: 50px;
+    width: 50px;
+    background-color: #7d0404;
+}

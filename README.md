@@ -2,6 +2,7 @@
 
 
 ## HTML
+- doctype especifica a versao para o navegador
 - Estrutura Básica do HTML
     - html, head, title, body
 - style
