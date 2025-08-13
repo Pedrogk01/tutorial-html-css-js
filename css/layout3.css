@@ -1,0 +1,33 @@
+#page {
+    display: flex;
+}
+#header {
+    width: 600px;
+    height: 150px;
+    background-color: #93a305;
+    
+}
+
+#sidebar {
+    height: 900px;
+    width: 200px;
+    background-color: #0f8300;
+}
+
+#content {
+    width: 600px;
+    height: 600px;
+    background-color: #6c7fe7;
+}
+
+
+
+#footer {
+    width: 600px ;
+    height: 150px;
+    background-color: #2f3033;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
