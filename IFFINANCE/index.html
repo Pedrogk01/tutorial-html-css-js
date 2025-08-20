@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IFFinance</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <div id="logo">
+                    <a href="./index.html">
+                        <img src="./IMAGE/dollar-finance-money-43.svg" alt="Logo IF Finance">
+                        <h1><span>IF</span>Finance<h1>
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a class="active" href="./index.html">Home</a></li>
+                        <li><a href="./quem-somos.html">Quem Somos</a></li>
+                        <li><a href="./bolsas.html">Bolsas</a></li>
+                        <li><a href="./destaques.html">Destaques</a></li>
+                        <li><a href="./contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="wrapper">
+                <div class="flex-bt align-center">
+                    <h1>Home</h1>
+                    <button style="height: 40px;" onclick="openModal('#modal-add-ticker')">+ Adicionar</button>
+                </div>
+                <div id="card-list">
+                    
+                </div>
+            </div>
+        </main>
+        <div class="modal" id="modal-add-ticker" onclick="closeModal(event, '#modal-add-ticker')">
+            <main>
+                <header class="flex-bt align-center">
+                    <h1>Adicionar Ação</h1>
+                    <button onclick="closeModal(null, '#modal-add-ticker')">⨉</button>
+                </header>
+                <form onsubmit="addTicker(event)">
+                    <label for="urlLogo">URL Logo:</label>
+                    <input type="text" id="urlLogo" name="urlLogo">
+                    <label for="nameCompany">Nome da Empresa:</label>
+                    <input type="text" id="nameCompany" name="nameCompany">
+                    <label for="ticker">Símbolo:</label>
+                    <input type="text" id="ticker" name="ticker">
+                    <label for="quantity">Quantidade:</label>
+                    <input type="text" id="quantity" name="quantity">
+                    <label for="closedValue">Valor da Ação:</label>
+                    <input type="text" id="closedValue" name="closedValue">
+
+                    <input type="submit" value="Adicionar" style="width: 50%;">
+                </form>
+            </main>
+        </div>
+        <div class="modal" id="modal-edit-ticker" onclick="closeModal(event, '#modal-edit-ticker')">
+            <main>
+                <header class="flex-bt align-center">
+                    <h1>Editar Ação</h1>
+                    <button onclick="closeModal(null, '#modal-edit-ticker')">⨉</button>
+                </header>
+                <form onsubmit="updateTicker(event)">
+                    <label for="eUrlLogo">URL Logo:</label>
+                    <input type="text" id="eUrlLogo" name="urlLogo">
+                    <label for="eNameCompany">Nome da Empresa:</label>
+                    <input type="text" id="eNameCompany" name="nameCompany">
+                    <label for="eTicker">Símbolo:</label>
+                    <input type="text" id="eTicker" name="ticker">
+                    <label for="eQuantity">Quantidade:</label>
+                    <input type="text" id="eQuantity" name="quantity">
+                    <label for="eClosedValue">Valor da Ação:</label>
+                    <input type="text" id="eClosedValue" name="closedValue">
+
+                    <input type="submit" value="Editar" style="width: 50%;">
+                </form>
+            </main>
+        </div>
+    </body>
+    <script src="./js/main.js"></script>
+</html>
